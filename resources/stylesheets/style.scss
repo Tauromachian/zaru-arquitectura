@@ -2,6 +2,9 @@
 @import "margin_mixins"; 
 @import "padding_mixins";
 
+@include make_margins(20);
+@include make_paddings(20);
+
 .bg-index-header{
   background-color: #303030 !important;
 }
