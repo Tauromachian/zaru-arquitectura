@@ -7,6 +7,7 @@ module.exports = {
     publicPath: "/public/dist",
     filename: "main.js"
   },
+  mode: "production",
   module: {
     rules: [
       {
