@@ -1,0 +1,30 @@
+@mixin make_margins {
+  @for $i from 0 to 6 {
+    @include make_margin_top($i * 5);
+    @include make_margin_bottom($i * 5);
+    @include make_margin_left($i * 5);
+    @include make_margin_right($i * 5);
+  }
+}
+
+@mixin make_margin_top($size) {
+  .margin-top-#{$size}{
+    margin-top: $size;
+  }
+}
+
+@mixin make_margin_bottom($size) {
+  .margin-top-#{$size}{
+    margin-bottom: $size;
+  }
+}
+@mixin make_margin_left($size) {
+  .margin-top-#{$size}{
+    margin-left: $size;
+  }
+}
+@mixin make_margin_right($size) {
+  .margin-top-#{$size}{
+    margin-right: $size;
+  }
+}
