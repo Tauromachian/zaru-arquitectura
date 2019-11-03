@@ -1,5 +1,5 @@
 @mixin make_paddings {
-  @for $i from 0 to 6 {
+  @for $i from 0 to 7 {
     @include make_padding_top($i * 5);
     @include make_padding_bottom($i * 5);
     @include make_padding_left($i * 5);
@@ -9,22 +9,22 @@
 
 @mixin make_padding_top($size) {
   .padding-top-#{$size}{
-    padding-top: $size;
+    padding-top: #{$size}px;
   }
 }
 
 @mixin make_padding_bottom($size) {
-  .padding-top-#{$size}{
-    padding-bottom: $size;
+  .padding-bottom-#{$size}{
+    padding-bottom: #{$size}px;
   }
 }
 @mixin make_padding_left($size) {
-  .padding-top-#{$size}{
-    padding-left: $size;
+  .padding-left-#{$size}{
+    padding-left: #{$size}px;
   }
 }
 @mixin make_padding_right($size) {
-  .padding-top-#{$size}{
-    padding-right: $size;
+  .padding-right-#{$size}{
+    padding-right: #{$size}px;
   }
 }
