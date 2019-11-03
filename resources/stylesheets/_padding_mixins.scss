@@ -13,17 +13,17 @@
   }
 }
 
-@mixin make_margin_bottom($size) {
+@mixin make_padding_bottom($size) {
   .padding-top-#{$size}{
     padding-bottom: $size;
   }
 }
-@mixin make_margin_left($size) {
+@mixin make_padding_left($size) {
   .padding-top-#{$size}{
     padding-left: $size;
   }
 }
-@mixin make_margin_right($size) {
+@mixin make_padding_right($size) {
   .padding-top-#{$size}{
     padding-right: $size;
   }
