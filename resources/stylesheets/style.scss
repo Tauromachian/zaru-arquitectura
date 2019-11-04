@@ -5,6 +5,9 @@
 @include make_margins(20);
 @include make_paddings(20);
 
-.bg-index-header{
+.index-header{
+  background-image: url("/images/header-image.jpg");
+  background-position: center;
+  background-size: cover;
   background-color: #303030 !important;
 }
