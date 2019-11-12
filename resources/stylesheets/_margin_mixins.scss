@@ -9,22 +9,22 @@
 
 @mixin make_margin_top($size) {
   .margin-top-#{$size}{
-    margin-top: $size;
+    margin-top: #{$size}px;
   }
 }
 
 @mixin make_margin_bottom($size) {
   .margin-bottom-#{$size}{
-    margin-bottom: $size;
+    margin-bottom: #{$size}px;
   }
 }
 @mixin make_margin_left($size) {
   .margin-left-#{$size}{
-    margin-left: $size;
+    margin-left: #{$size}px;
   }
 }
 @mixin make_margin_right($size) {
   .margin-right-#{$size}{
-    margin-right: $size;
+    margin-right: #{$size}px;
   }
 }

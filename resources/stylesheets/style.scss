@@ -1,13 +1,19 @@
 
 @import "margin_mixins"; 
-@import "padding_mixins";
-
 @include make_margins(20);
+
+@import "padding_mixins";
 @include make_paddings(20);
 
+.bg-navbar{
+  background-color: black;
+}
+
 .index-header{
-  background-image: url("/images/header-image.jpg");
+  background-image: url("");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+
   background-color: #303030 !important;
 }
