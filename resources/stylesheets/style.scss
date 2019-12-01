@@ -4,9 +4,7 @@
 @import "padding_mixins";
 @include make_paddings(20);
 
-.bg-principal {
-  background-color: black;
-}
+@import "colors";
 
 #index-header {
   background-image: url("/images/header-image.jpg");
