@@ -17,9 +17,14 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;
 }
 
+.index-header-content{
+  width: inherit;
+  height: inherit;
+  background-color: rgba($color: #272a31, $alpha: 0.85);
+
+}
 
 .site-logo{
   width: 15rem;
