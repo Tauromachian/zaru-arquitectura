@@ -12,10 +12,16 @@
 
 .index-header{
   background-image: url("/images/header-image.jpg");
-  width: inherit;
-  height: 40rem;
+  width: auto;
+  height: 36rem;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: black;
+}
 
+
+.site-logo{
+  width: 15rem;
+  height: 5rem;
 }
