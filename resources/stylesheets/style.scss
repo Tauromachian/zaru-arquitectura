@@ -9,11 +9,13 @@
   background-color: black;
 }
 
+
 .index-header{
-  background-image: url("");
-  background-position: center;
+  background-image: url("/images/header-image.jpg");
+  width: inherit;
+  height: 40rem;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-color: #303030 !important;
 }
