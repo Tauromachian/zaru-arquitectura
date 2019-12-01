@@ -1,32 +1,33 @@
-
-@import "margin_mixins"; 
+@import "margin_mixins";
 @include make_margins(20);
 
 @import "padding_mixins";
 @include make_paddings(20);
 
-.bg-principal{
+.bg-principal {
   background-color: black;
 }
 
-
-.index-header{
+#index-header {
   background-image: url("/images/header-image.jpg");
   width: auto;
   height: 36rem;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  
+  .index-header-content {
+    width: inherit;
+    height: inherit;
+    background-color: rgba($color: #272a31, $alpha: 0.85);
+  }
+
+  .header-separator {
+    height: 8em;
+  }
 }
 
-.index-header-content{
-  width: inherit;
-  height: inherit;
-  background-color: rgba($color: #272a31, $alpha: 0.85);
-
-}
-
-.site-logo{
+.site-logo {
   width: 15rem;
   height: 5rem;
 }
