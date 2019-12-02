@@ -6,6 +6,11 @@
 
 @import "colors";
 
+nav, footer{
+  background-image: url("/images/bg-primary-2.jpg");
+  background-repeat: repeat;
+}
+
 #index-header {
   background-image: url("/images/header-image.jpg");
   width: auto;
