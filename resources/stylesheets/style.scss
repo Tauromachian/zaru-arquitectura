@@ -49,14 +49,20 @@ h1 {
 
 @media (min-width: 35em) {
   h1 {
-  font-family: architextregular;
-}
+    font-size: 3.2rem;
+  }
 }
 
 @media (min-width: 50em) {
   h1 {
     font-size: 4rem;
   }
+}
+
+nav,
+footer .footer {
+  background-image: url("/images/bg-primary-2.jpg");
+  background-repeat: repeat;
 }
 
 #index-header {
@@ -67,7 +73,7 @@ h1 {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   .index-header-content {
     width: inherit;
     height: inherit;
@@ -77,10 +83,4 @@ h1 {
   .header-separator {
     height: 8em;
   }
-}
-
-
-.social-network-button{
-  width: 2.8rem;
-  height: 2.4rem ;
 }
