@@ -8,6 +8,16 @@
 
 @import "colors";
 
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 nav, footer .footer{
   background-image: url("/images/bg-primary-2.jpg");
   background-repeat: repeat;
@@ -33,10 +43,6 @@ nav, footer .footer{
   }
 }
 
-.site-logo {
-  width: 15rem;
-  height: 5rem;
-}
 
 .social-network-button{
   width: 2.8rem;
