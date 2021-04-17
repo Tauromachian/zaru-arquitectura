@@ -8,6 +8,7 @@
 
 @import "colors";
 @import "site_logo";
+@import "text_card";
 
 @font-face {
   font-family: architextregular;
@@ -34,6 +35,18 @@
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  font-family: rollandinemilieregular, architextregularm Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: rollandinemilieregular;
+}
+
+h1 {
+  font-family: architextregular;
 }
 
 nav, footer .footer{
