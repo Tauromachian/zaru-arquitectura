@@ -4,6 +4,8 @@
 @import "padding_mixins";
 @include make_paddings(20);
 
+@import "image_gallery";
+
 @import "colors";
 
 nav, footer .footer{
