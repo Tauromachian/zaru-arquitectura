@@ -11,18 +11,18 @@
 @import "text_card";
 
 @font-face {
-  font-family: architextregular;
-  src: url('../fonts/architext/architex-webfont.woff2') format('woff2'),
-       url('../fonts/architext/architex-webfont.woff') format('woff');
+  font-family: "architextregular";
+  src: url("../fonts/architext/architex-webfont.woff2") format("woff2"),
+    url("../fonts/architext/architex-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-
 @font-face {
-  font-family: rollandinemilieregular;
-  src: url('../fonts/rollandinemilie/rollandinemilie-webfont.woff2') format('woff2'),
-       url('../fonts/rollandinemilie/rollandinemilie-webfont.woff') format('woff');
+  font-family: "rollandinemilieregular";
+  src: url("../fonts/rollandinemilie/rollandinemilie-webfont.woff2")
+      format("woff2"),
+    url("../fonts/rollandinemilie/rollandinemilie-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
