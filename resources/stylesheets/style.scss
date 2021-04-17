@@ -13,23 +13,6 @@
 @import "text_card";
 @import "social_network_buttons";
 
-@font-face {
-  font-family: "architextregular";
-  src: url("../fonts/architext/architex-webfont.woff2") format("woff2"),
-    url("../fonts/architext/architex-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "rollandinemilieregular";
-  src: url("../fonts/rollandinemilie/rollandinemilie-webfont.woff2")
-      format("woff2"),
-    url("../fonts/rollandinemilie/rollandinemilie-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 @media (min-width: 35em) {
   h1 {
     font-size: 3.2rem;
