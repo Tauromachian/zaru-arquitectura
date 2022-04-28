@@ -13,6 +13,7 @@
 @import "site_logo";
 @import "text_card";
 @import "social_network_buttons";
+@import "hero";
 
 nav,
 footer .footer {
@@ -20,22 +21,3 @@ footer .footer {
   background-repeat: repeat;
 }
 
-#index-header {
-  background-image: url("/images/header-image.jpg");
-  width: auto;
-  height: 36rem;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  .index-header-content {
-    width: inherit;
-    height: inherit;
-    background-color: rgba($color: #272a31, $alpha: 0.85);
-  }
-
-  .header-separator {
-    height: 8em;
-  }
-}
