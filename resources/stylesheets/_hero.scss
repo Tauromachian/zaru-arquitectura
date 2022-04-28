@@ -1,0 +1,22 @@
+.hero-section {
+  background-image: url("/images/header-image.jpg");
+  height: calc(100vh - 96px);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  .hero-section__overlay {
+    background-color: rgba($color: #272a31, $alpha: 0.85);
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
