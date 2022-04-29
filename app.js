@@ -3,16 +3,23 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-const webpackDevMiddleware = require("webpack-dev-middleware");
-const webpack = require("webpack");
+var livereload = require("livereload");
+var connectLiveReload = require("connect-livereload");
 
 var indexRouter = require("./app_server/routes/routes");
 var usersRouter = require("./app_server/routes/users");
-const config = require("./webpack.config");
-const compiler = webpack(config);
+
+const liveReloadServer = livereload.createServer();
+liveReloadServer.watch(path.join(__dirname, "public"));
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh("/");
+  }, 100);
+});
 
 var app = express();
 
+app.use(connectLiveReload());
 // view engine setup
 app.set("views", path.join(__dirname, "app_server/views"));
 app.set("view engine", "ejs");
@@ -23,11 +30,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
-app.use(
-  webpackDevMiddleware(compiler, {
-    publicPath: config.output.publicPath,
-  })
-);
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
