@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "nodemon",
+    "dev": "nodemon -e js,ejs,json",
     "build": "webpack",
     "watch": "webpack --watch"
   },
