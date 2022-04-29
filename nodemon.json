@@ -1,0 +1,9 @@
+{
+  "verbose": true,
+  "ignore": [
+    "*.test.js",
+    "fixtures/*",
+    "public",
+    "node_modules"
+  ]
+}
