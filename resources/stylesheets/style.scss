@@ -15,9 +15,15 @@
 @import "social_network_buttons";
 @import "hero";
 
+$theme-colors: (
+  "primary": red,
+  "accent": $accent,
+);
+
+@import "bootstrap/scss/bootstrap.scss";
+
 nav,
 footer .footer {
   background-image: url("/images/bg-primary-2.jpg");
   background-repeat: repeat;
 }
-
