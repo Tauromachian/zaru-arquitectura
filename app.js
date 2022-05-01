@@ -9,17 +9,19 @@ var connectLiveReload = require("connect-livereload");
 var indexRouter = require("./app_server/routes/routes");
 var usersRouter = require("./app_server/routes/users");
 
-const liveReloadServer = livereload.createServer();
-liveReloadServer.watch(path.join(__dirname, "public"));
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
-
 var app = express();
 
-app.use(connectLiveReload());
+if (process.env.NODE_ENV !== "development") {
+  const liveReloadServer = livereload.createServer();
+  liveReloadServer.watch(path.join(__dirname, "public"));
+  liveReloadServer.server.once("connection", () => {
+    setTimeout(() => {
+      liveReloadServer.refresh("/");
+    }, 100);
+  });
+  app.use(connectLiveReload());
+}
+
 // view engine setup
 app.set("views", path.join(__dirname, "app_server/views"));
 app.set("view engine", "ejs");
