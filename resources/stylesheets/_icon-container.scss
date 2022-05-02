@@ -1,0 +1,14 @@
+.icon-container {
+  position: relative;
+}
+
+.icon-container > img {
+  position: absolute;
+  height: 100%;
+  left: -15px;
+  top: -3px;
+}
+
+.icon-container > span {
+  position: relative;
+}
