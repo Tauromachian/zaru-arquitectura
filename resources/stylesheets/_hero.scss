@@ -23,6 +23,17 @@
     }
   }
 
+  p {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  @media screen and (min-width: 800px) {
+    p {
+      font-size: 2rem;
+    }
+  }
+
   .hero-section__overlay {
     background-color: rgba($color: #272a31, $alpha: 0.85);
     width: inherit;
