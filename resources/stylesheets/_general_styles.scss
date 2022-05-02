@@ -22,8 +22,13 @@ body {
 }
 
 h1 {
-  font-family: "rollandinemilieregular";
+  font-family: "rollandinemilieregular", sans-serif;
   font-size: 2.3rem;
+}
+
+h2 {
+  font-family: "Shadows Into Light";
+  font-size: 4rem !important;
 }
 
 @media (min-width: 35em) {
