@@ -8,7 +8,7 @@ const home = (req, res) => {
 const aboutUs = (req, res) => {
   return res.render("pages/about", {
     title: "Sobre nosotros",
-    route: "/aboutus",
+    route: "/sobre-nosotros",
   });
 };
 

@@ -28,11 +28,11 @@
           href="/"
           >Hogar
         </a>
-        <a class="nav-item nav-link navbar__link" href="/sobre-nosotros"
+        <a
+          class="nav-item nav-link navbar__link <%= route === '/sobre-nosotros' ? 'active' : '' %>"
+          href="/sobre-nosotros"
           >Acerca de</a
         >
-        <a class="nav-item nav-link navbar__link" href="#">Services</a>
-        <a class="nav-item nav-link navbar__link" href="#">Projects</a>
         <a
           class="nav-item nav-link navbar__link <%= route === '/contactanos' ? 'active' : '' %>"
           href="/contactanos"
