@@ -3,13 +3,16 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 var indexRouter = require("./app_server/routes/routes");
 var usersRouter = require("./app_server/routes/users");
 
 var app = express();
 
-if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV === "development") {
   var livereload = require("livereload");
   var connectLiveReload = require("connect-livereload");
 
