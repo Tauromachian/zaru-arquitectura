@@ -23,11 +23,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav ms-auto">
-        <a class="nav-item nav-link active navbar__link" href="/">Hogar </a>
+        <a
+          class="nav-item nav-link navbar__link <%= route === '/' ? 'active' : '' %>"
+          href="/"
+          >Hogar
+        </a>
         <a class="nav-item nav-link navbar__link" href="#">Acerca de</a>
         <a class="nav-item nav-link navbar__link" href="#">Services</a>
         <a class="nav-item nav-link navbar__link" href="#">Projects</a>
-        <a class="nav-item nav-link navbar__link" href="/contactanos"
+        <a
+          class="nav-item nav-link navbar__link <%= route === '/contactanos' ? 'active' : '' %>"
+          href="/contactanos"
           >Contact Us</a
         >
       </div>
