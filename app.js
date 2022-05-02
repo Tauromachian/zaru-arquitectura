@@ -9,7 +9,7 @@ var usersRouter = require("./app_server/routes/users");
 
 var app = express();
 
-if (process.env.NODE_ENV !== "development") {
+if (process.env.NODE_ENV !== "production") {
   var livereload = require("livereload");
   var connectLiveReload = require("connect-livereload");
 
