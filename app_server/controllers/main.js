@@ -5,6 +5,13 @@ const home = (req, res) => {
   });
 };
 
+const aboutUs = (req, res) => {
+  return res.render("pages/about", {
+    title: "Sobre nosotros",
+    route: "/aboutus",
+  });
+};
+
 const contactUs = (req, res) => {
   return res.render("pages/contact_us", {
     title: "Contáctanos",
@@ -14,5 +21,6 @@ const contactUs = (req, res) => {
 
 module.exports = {
   home,
+  aboutUs,
   contactUs,
 };
