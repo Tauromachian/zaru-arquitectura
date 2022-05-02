@@ -3,8 +3,6 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-var livereload = require("livereload");
-var connectLiveReload = require("connect-livereload");
 
 var indexRouter = require("./app_server/routes/routes");
 var usersRouter = require("./app_server/routes/users");
@@ -12,6 +10,9 @@ var usersRouter = require("./app_server/routes/users");
 var app = express();
 
 if (process.env.NODE_ENV !== "development") {
+  var livereload = require("livereload");
+  var connectLiveReload = require("connect-livereload");
+
   const liveReloadServer = livereload.createServer();
   liveReloadServer.watch(path.join(__dirname, "public"));
   liveReloadServer.server.once("connection", () => {
